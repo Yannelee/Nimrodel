@@ -22,7 +22,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Nuestros Productos</a>
+              <a class="nav-link" aria-current="page" href="#">Nuestros Productos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#comuniquemonos" onclick="visibleFormComu()">Comuniquemonos</a>
@@ -31,7 +31,7 @@
               <a class="nav-link" href="#reservar" onclick="visibleFormRs()">Reservar</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Sobre Nosostros</a>
+              <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modalSobreNosotros">Sobre Nosostros</a>
             </li>
           </ul>
         </div>
@@ -39,8 +39,51 @@
     </nav>
   </header>
 
-  <h1 class="titulo m-5 text-secondary">Nimrodel Pub Restaurant</h1>
-  <h3 class="subtitulo m-3">Destacados de la Semana</h3>
+
+  <div class="modal fade" id="modalSobreNosotros" tabindex="-1" aria-labelledby="SobreNosotrosModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="SobreNosotrosModal">Nimrodel Pub Restaurant</h1>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div id="carrusel-SobreNosotros" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner inner-nosotros">
+              <div class="carousel-item active">
+                <p>“Nimrodel Significa “dama de la cueva blanca”. Fue una elfa silvana que vivió durante la Tercera Edad del Sol en el bosque de Lothlórien. En honor a su nombre, se acuña Nimrodel al río que nace en las Montañas Nubladas”. </p>
+                <img src="./assets/img/IMG2.jpg" class="d-block w-100" alt="imagen historia Nimrodel">
+              </div>
+              <div class="carousel-item slide2">
+                <p>“Nimrodel Pub Restaurant es un oasis de calma y diversión, lleno de rincones acogedores en donde se resalta la belleza de su decoración élfica. 
+                  Es un lugar ideal para visitar solo o acompañado, disfrutar una tarde con amigos, terminar el día después del trabajo o almorzar con tu familia.
+                  Puedes probar nuestras tradicionales tablas, en todas sus variedades y que nos han otorgado reconocimiento dentro de la cultura gastronómica.
+                  También puedes disfrutar nuestras cervezas de fabricación propia, con sabores que te llevarán a un mágico mundo.”</p>
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/IMG1.jpg" class="d-block w-100" alt="">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-SobreNosotros" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carrusel-SobreNosotros" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="titulos">
+    <h1 class="titulo m-5 text-secondary">Nimrodel Pub Restaurant</h1>
+    <h3 class="subtitulo m-3">Destacados de la Semana</h3>
+  </div>
 
   <div class="row tarjetas row-cols-1 row-cols-lg-3 g-4 m-4">
     <div class="col">
@@ -72,7 +115,7 @@
     </div>
   </div>
 
-  <div id="modal" class="container-fluid w-50">
+  <div id="modalProductos" class="container-fluid w-50">
     <div class="row">
       <div class="card h-100 bg-dark text-white">
         <div class="card-body">
@@ -197,8 +240,6 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-
-
 
   <footer>
     <p class="p-5">Todos los derechos reservados <i class="far fa-registered fa-sm" style="color: #3c93b9;"></i>.</p>

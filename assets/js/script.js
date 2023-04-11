@@ -121,8 +121,9 @@ $(()=>{
     alert(`Muchas gracias ${nombre}, hemos recibido su reserva en local de ${local} para la fecha ${fecha} a las ${hora} para ${asistentes} persona(s). Nos estaremos comunicando a través del teléfono ${telefono} o a su correo electrónico ${mail}`)
   }
   
+  //.MODAL
   $('.card').dblclick(function(){
-    $('#modal').show()
+    $('#modalProductos').show()
     let textH5 = this.childNodes[3].querySelector('h5').innerHTML
     let textP = this.childNodes[3].childNodes[3].innerHTML
     let imgSrc = this.childNodes[1].src
@@ -133,6 +134,6 @@ $(()=>{
   })
 
   $('.fa-times').click(()=>{
-    $('#modal').hide()
+    $('#modalProductos').hide()
   })
 })

@@ -15,11 +15,17 @@ html, body {
 .subtitulo{
   text-decoration: overline;
 }
+.inner-nosotros{
+  padding: 0rem 7rem;
+}
+.slide2{
+  padding: 5rem 0rem;
+}
 .card img{
   height: 20rem;
   object-fit: cover;
 }
-#modal{
+#modalProductos{
   display: none;
   position: fixed;
   top: 25%;
