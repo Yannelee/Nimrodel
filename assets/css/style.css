@@ -1,0 +1,50 @@
+html, body {
+  text-align: center;
+}
+
+.navbar{
+  background-image: url("../img/fondo.jpg");
+  background-repeat: repeat-x;
+  background-position: top;
+  background-size: 30%;
+  text-align: left;
+}
+.navbar-nav{
+  margin: auto;
+}
+.subtitulo{
+  text-decoration: overline;
+}
+.card img{
+  height: 20rem;
+  object-fit: cover;
+}
+#modal{
+  display: none;
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  z-index: 1;
+}
+.fa-times{
+  position: absolute;
+  left: 5%;
+}
+.carousel-item img {
+  height: 30rem;
+  object-fit:cover;
+}
+
+footer{
+  background-image: url("../img/fondo.jpg");
+  background-color: black;
+  height: 12rem;
+  background-size: 75%;
+  background-repeat: no-repeat;
+  color: white;
+}
+@media (max-width: 991px) {
+  .navbar{
+    background-size: 80%;
+  }
+}
